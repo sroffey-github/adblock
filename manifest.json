@@ -1,13 +1,10 @@
 {
-    "name": "AD BLOCKER",
-    "description": "AD Blocker Project",
-    "version": "1.0",
-    "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
-      },
-      "permissions": ["storage"],
-    "action": {
-    "default_popup": "popup.html"
-    }
+  "name": "AD Blocker", 
+  "description": "Extensions to block ads on websites",
+  "manifest_version": 2,
+  "version": "1.11", 
+  "background": {
+      "scripts": ["blocked_sites.js", "background.js"]
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
 }
